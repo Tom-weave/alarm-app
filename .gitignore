@@ -3,3 +3,8 @@ node_modules/
 *.log
 .vscode/
 .idea/
+
+# Convex
+.env.local
+.env
+convex/_generated/

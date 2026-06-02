@@ -20,6 +20,7 @@
         <button id="stop-btn" type="button" disabled>停止</button>
       </div>
       <p id="status" class="status">アラーム未設定</p>
+      <p id="sync-status" class="sync-status">同期: 未接続</p>
     </section>
   </main>
 
@@ -27,6 +28,7 @@
     <source src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" type="audio/ogg" />
   </audio>
 
-  <script src="app.js"></script>
+  <script src="config.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 </html>

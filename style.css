@@ -76,3 +76,9 @@ button:disabled {
   font-size: 0.9rem;
   opacity: 0.85;
 }
+
+.sync-status {
+  margin: 0.5rem 0 0;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
