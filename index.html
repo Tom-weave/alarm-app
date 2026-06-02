@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>目覚ましアプリ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>目覚まし</h1>
+    <div id="clock" class="clock">--:--:--</div>
+
+    <section class="controls">
+      <label for="alarm-time">アラーム時刻</label>
+      <input type="time" id="alarm-time" />
+      <div class="buttons">
+        <button id="set-btn" type="button">セット</button>
+        <button id="clear-btn" type="button" disabled>解除</button>
+        <button id="stop-btn" type="button" disabled>停止</button>
+      </div>
+      <p id="status" class="status">アラーム未設定</p>
+    </section>
+  </main>
+
+  <audio id="alarm-sound" loop>
+    <source src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" type="audio/ogg" />
+  </audio>
+
+  <script src="app.js"></script>
+</body>
+</html>
